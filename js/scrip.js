@@ -54,10 +54,10 @@ $(document).ready(function() {
             let json = JSON.stringify(obj);
 
             $.ajax({
-                type: 'POST',
+                //type: 'POST',
                 url: "../server.php",
                 data: json,
-                dataType: "script",
+                //dataType: "script",
                 error: function() {
                     alert("В запросе была ошибка")
                 },

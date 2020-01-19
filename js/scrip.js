@@ -57,6 +57,7 @@ $(document).ready(function() {
                 type: 'POST',
                 url: "../server.php",
                 data: json,
+                dataType: "script",
                 error: function() {
                     alert("В запросе была ошибка")
                 },

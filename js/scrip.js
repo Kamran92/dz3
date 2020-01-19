@@ -59,9 +59,9 @@ $(document).ready(function() {
                 data: json,
                 //dataType: "script",
                 error: function() {
-                    alert("В запросе была ошибка")
+                    alert("GitHub не допускает POST-запросы")
                 },
-                success: function() {
+				complete: function() {
                     modal.css({"display": "none"});
                     thanks.css({"display": "block", "top": "0px"});
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
                             "opacity": "hide"
                         }, 1000)
                     })
-                }
+                },
             })
 
             input.each(function(i, elem) {
